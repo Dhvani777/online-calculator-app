@@ -10,7 +10,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<myfirstpipeline>'
+    azureSubscription: 'myfirstpipeline'
     appType: 'webAppLinux'
     appName: 'myfirstpipeline1'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
